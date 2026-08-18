@@ -117,7 +117,7 @@ docs/               # BRD, PRD, SPEC, TEST-SPEC, BACKLOG
 | [docs/SPEC.md](docs/SPEC.md) | Đặc tả kỹ thuật — đọc file này trước khi code |
 | [docs/TEST-SPEC.md](docs/TEST-SPEC.md) | Ca kiểm thử |
 | [docs/BACKLOG.md](docs/BACKLOG.md) | Danh sách công việc theo thứ tự thực hiện |
-| [CLAUDE.md](CLAUDE.md) | Quy ước cho Claude Code |
+
 
 ---
 
