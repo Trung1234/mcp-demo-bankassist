@@ -1,0 +1,9 @@
+# Hướng dẫn riêng cho Claude Code, không commit
+CLAUDE.md
+
+# Kết quả build
+bin/
+obj/
+
+# Cấu hình cục bộ của máy dev
+appsettings.Development.json

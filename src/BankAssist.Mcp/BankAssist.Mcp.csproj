@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <RootNamespace>BankAssist.Mcp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModelContextProtocol.AspNetCore" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="BankAssist.Mcp.Tests" />
+  </ItemGroup>
+
+  <!--
+    Dữ liệu mẫu chỉ có một bản duy nhất ở gốc repo (README mục "data/").
+    Sao chép sang thư mục output để server chạy được dù working directory là đâu.
+  -->
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\data\*.json"
+          Link="data\%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
